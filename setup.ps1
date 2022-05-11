@@ -17,3 +17,14 @@ else {
     New-Item -Path "../.ideavimrc" -ItemType SymbolicLink -Value ".ideavimrc"
     Write-Host "link created for .ideavimrc"
 }
+
+Write-Host
+
+Write-Host "Link .nvimrc"
+if (Test-Path -Path "../.nvimrc" -PathType Leaf) {
+    Write-Host ".nvimrc already exists"
+}
+else {
+    New-Item -Path "../.nvimrc" -ItemType SymbolicLink -Value ".nvimrc"
+    Write-Host "link created for .nvimrc"
+}
