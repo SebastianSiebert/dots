@@ -54,3 +54,6 @@ nmap gL <Action>(QuickImplementations)
 nmap gy <Action>(ShowErrorDescription)
 
 nmap <Leader>z <Action>(ToggleZenMode)
+
+map <Leader>cl <Action>(CommentByLineComment)
+map <Leader>cb <Action>(CommentByBlockComment)
